@@ -1,6 +1,6 @@
 // Pascal triangle
 
-// 1. print Nth row and Nth colomn elements
+// 1. print Nth row and Nth colomn elements 
 
 #include <iostream>
 using namespace std;
