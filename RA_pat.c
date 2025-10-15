@@ -20,6 +20,8 @@ pattern 15 -> pascal triangle
 pattern 16 -> palindromic pattern
 pattern 17 -> character pattern
 pattern 18 -> X star pattern
+pattern 19 -> hourglass star pattern
+pattern 20 -> butterfly star pattern
  */
 int fact(int n){
     int res = 1;
@@ -242,5 +244,33 @@ int main()
         printf("\n");
     }
     printf("\n\n");
+    /* pattern 19*/
+        for(int i=1;i<=n;i++){
+        for(int j = 1;j<=i-1;j++) printf("  ");
+        for(int j = 1;j<=2*(n-i)+1;j++) printf("* ");
+         printf("\n");
+    }
+    for(int i=2;i<=n;i++){
+        for(int j = 1;j<=n-i;j++) printf("  ");
+        for(int j = 1;j<=2*i-1;j++) printf("* ");
+        printf("\n");
+    }
+    printf("\n\n");
+    /* pattern 20*/
+    for(int i=1; i<=n;i++) {
+        for(int j = 1;j <= i;j++) printf("*");
+        for(int j = 1;j <= 2*(n - i);j++) printf(" ");
+        for(int j = 1;j <= i;j++) printf("*");
+
+        printf("\n");
+    }
+
+    for(int i = n; i >= 1; i--) {
+        for(int j = 1;j <= i;j++) printf("*");
+        for(int j = 1;j <= 2*(n - i);j++) printf(" ");
+        for(int j = 1;j <= i;j++) printf("*");
+
+        printf("\n");
+    }
     return 0;
 }
