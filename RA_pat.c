@@ -1,7 +1,5 @@
 #include <stdio.h>
-
  /*
- 
 pattern 1 -> left skewed right angle triangle
 pattern 2 -> right skewed right angle triangle
 pattern 3 -> inverted left skewed right angle triangle
